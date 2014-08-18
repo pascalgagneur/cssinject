@@ -35,7 +35,7 @@ function initReCss($){
     var htmlArray = [],
         links = $("link[rel='stylesheet']"),
         reCssCon = $('<div id="reCssCon" class="container"></div>');
-    appendLinkToHeadAndArray('http://www.webguy.se/cssInject/1.0/cssInject.css',links.length);
+    appendLinkToHeadAndArray('https://raw.githubusercontent.com/pascalgagneur/cssinject/master/cssInject.css',links.length);
     reCssCon.html('<div class="sides"><div id="reCssFront" class="face front"></div><div id="reCssBack" class="face back"></div></div>');
     $('body').append(reCssCon);
     //Creating settings
