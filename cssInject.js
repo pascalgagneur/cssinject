@@ -34,13 +34,13 @@ yepnope([{
 function initReCss($){
     var htmlArray = [],
         links = $("link[rel='stylesheet']"),
-        reCssCon = $('<div id="reCssCon" class="container"></div>');
+        reCssCon = $('<div id="reCssCon" class="container fixed"></div>');
     appendLinkToHeadAndArray('https://rawgit.com/pascalgagneur/cssinject/master/cssInject.css',links.length);
     reCssCon.html('<div class="sides"><div id="reCssFront" class="face front"></div><div id="reCssBack" class="face back"></div></div>');
     $('body').append(reCssCon);
     //Creating settings
     htmlArray.push('<div id="settings"><h1>Settings</h1>');
-    htmlArray.push('<div class="settings"><h2>Fixed</h2>Activate position:fixed<label for="setFixed" class="switch"><div></div></label><input type="checkbox" id="setFixed"/></div>');
+    htmlArray.push('<div class="settings"><h2>Fixed</h2>Activate position:fixed<label for="setFixed" class="switch"><div></div></label><input type="checkbox" id="setFixed" checked/></div>');
     htmlArray.push('<div class="settings"><h2>Draggable</h2>Makes the window draggable<label for="setDraggable" class="switch"><div></div></label><input type="checkbox" id="setDraggable"/></div>');
     htmlArray.push('</div>');
     htmlArray.push('<div class="'+imgData.settings.cl+'" title="'+imgData.settings.tit+'"></div>');
